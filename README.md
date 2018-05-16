@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the finance tracker app from the Complete Ruby on Rails Developer course, at Udemy
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby & Rails version
 
-* System dependencies
+    $ ruby -v
+    ruby 2.3.3p222 (2016-11-21 revision 56859) [i386-mingw32]
+
+    $ rails -v
+    Rails 5.1.6
 
 * Configuration
 
+    After clone, do:
+    $ bundle install
+
 * Database creation
 
-* Database initialization
-
+    $ rails db:migrate
+    
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+    $ rails db:migrate RAILS_ENV=test
+    $ rails test
 
 * Deployment instructions
 
-* ...
+    deployed to heroku, check:
+    finance-tracker-apetizer.herokuapp.com
+    
