@@ -8,7 +8,7 @@ class UserStocksController < ApplicationController
     end
 
     @user_stock = UserStock.create(user: current_user, stock: stock)
-    flash[:success] = "Stock #{@user_stock.name} was seccessfully added to portfolio." 
+    flash[:success] = "Stock #{@user_stock.stock.name} was seccessfully added to portfolio." 
   end
-  
+
 end
