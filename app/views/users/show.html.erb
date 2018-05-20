@@ -1,0 +1,20 @@
+<h2 align= "center">User Details</h2>
+
+<dl class = "dl-horizontal">
+  <dt><stong>Full Name:</stong></dt>
+  <dd><%= @user.full_name %></dd>
+  <dt><stong>Email:</stong></dt>
+  <dd><%= @user.email %></dd>
+</dl>
+
+
+<% if @user.stocks.size > 0 %>
+ <%=render 'stocks/list'%> 
+<% else %>
+  <div align = "center">
+    <i class="fa fa-frown-o fa_custom fa-5x"></i>
+    <p class = "lead"><%= @user.full_name %> doesn't have stocks in his portfolio. </p>
+  </div>
+<% end %>
+
+<%= link_to 'Back', my_friends_path, class:"btn btn-primry" %>

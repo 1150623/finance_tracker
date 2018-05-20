@@ -33,6 +33,14 @@ class User < ApplicationRecord
     "Anonymous"
   end
 
+  def can_add_friend?(friend_id)
+    friendships.where(friend_id: friend_id).count < 1
+  end
+
+  def except_current_user(users)
+    users.reject { |user| user.id == self.id }
+  end
+
   def self.search(param)
     param.strip!
     param.downcase!
