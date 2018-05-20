@@ -1,0 +1,28 @@
+
+<% if params[:action] == 'search' %>
+  <div class = "results-block">
+    <%= bootstrap_flash %>
+  </div>
+<% end %> 
+<!-- HOME MADE
+
+<% if @users %>
+  <div class = "well results-block">
+    <% @users.each do |user| %>
+
+      <div class= "well second-well">
+        <strong>Name: </strog><%= user.full_name() %>
+        <strong>Email: </strog><%= user.email %>
+        <% if current_user.can_add_friend?(user.email) %>
+          <%= link_to "Add Friend", friendships_path(user: current_user, friend: user),
+                                                class: "btn btn-xs btn-success", method: :post %>
+        <% else %>
+          <%= link_to "Remove Friend", friendships_path(user: current_user, friend: user),
+                                                class: "btn btn-xs btn-danger", method: :delete %>
+        <% end %>
+    
+    <% end %>
+  </div>
+<%end%>
+
+-->
