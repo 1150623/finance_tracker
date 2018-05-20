@@ -21,6 +21,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 gem 'twitter-bootstrap-rails'
+gem 'font-awesome-sass'
+gem "font-awesome-rails"
 gem 'devise-bootstrap-views'
 gem "stock_quote"
 # Use CoffeeScript for .coffee assets and views
